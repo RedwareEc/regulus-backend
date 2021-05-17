@@ -1,0 +1,9 @@
+[submodule "packages/hapi-postgraphile"]
+        path = packages/hapi-postgraphile
+        url = git@github.com:RedwareEc/hapi-postgraphile.git
+[submodule "packages/hapi-rest"]
+        path = packages/hapi-rest
+        url = git@github.com:RedwareEc/hapi-rest.git
+[submodule "packages/js-utils"]
+        path = packages/js-utils
+        url = git@github.com:RedwareEc/js-utils.git

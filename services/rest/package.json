@@ -1,0 +1,35 @@
+{
+  "name": "@regulus/rest",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsnd --respawn --files src/server.ts",
+    "test": "jest",
+    "build": "tsc -p ./tsconfig.build.json",
+    "watch": "tsc -w"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "@hapi/boom": "^9.1.1",
+    "@hapi/glue": "^8.0.0",
+    "@hapi/hapi": "^20.1.3",
+    "@redware/hapi-postgraphile": "^1.0.0",
+    "@redware/hapi-rest": "^1.0.0",
+    "@redware/postgraphile-orm": "^3.0.3",
+    "dotenv": "^9.0.2",
+    "esno": "^0.5.0",
+    "hapi-auth-jwt2": "^10.2.0",
+    "hapi-pino": "^8.3.0",
+    "hapi-pulse": "^3.0.0",
+    "joi": "^17.3.0"
+  },
+  "devDependencies": {
+    "@types/hapi-pino": "^8.0.1",
+    "@types/hapi__boom": "^9.0.1",
+    "@types/hapi__glue": "^6.1.3",
+    "@types/hapi__hapi": "^20.0.4",
+    "eslint": "^7.18.0"
+  }
+}

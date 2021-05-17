@@ -1,0 +1,28 @@
+{
+  "name": "@regulus/rest-commons",
+  "version": "1.0.0",
+  "description": "Js utils for node.js",
+  "author": "Andres Navarrete",
+  "license": "MIT",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist/",
+    "types/"
+  ],
+  "scripts": {
+    "build:lib": "ttsc -p tsconfig.build.json",
+    "watch": "ttsc -p tsconfig.build.json -w",
+    "test": "jest",
+    "prepare": "yarn build:ts"
+  },
+  "devDependencies": {
+    "@redware/hapi-rest": "^1.0.0",
+    "@redware/hapi-postgraphile": "^1.0.0",
+    "@types/ramda": "^0.27.14"
+  },
+  "dependencies": {
+    "ramda": "^0.27.1"
+  },
+  "gitHead": "de80888141a1a22b4f3b67531033b3da6f56e740"
+}

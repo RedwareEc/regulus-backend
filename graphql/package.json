@@ -1,0 +1,35 @@
+{
+  "name": "@regulus/graphql",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Api ecommerce",
+  "repository": {
+    "type": "git"
+  },
+  "author": "Andres Navarrete",
+  "license": "MIT",
+  "main": "./index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "start": "node index.js",
+    "pm2": "pm2 start process.json",
+    "pm2:prod": "pm2 start production.json",
+    "exe": "pkg ./package.json --targets linux -o ../dist/graphql"
+  },
+  "pkg": {
+    "target": "linux"
+  },
+  "dependencies": {
+    "@graphile-contrib/pg-many-to-many": "^1.0.0",
+    "@graphile-contrib/pg-order-by-related": "^1.0.0-beta.6",
+    "@graphile-contrib/pg-simplify-inflector": "^6.1.0",
+    "@redware/js-utils": "^2.0.5",
+    "fastify": "^3.14.1",
+    "postgraphile": "4.11.0",
+    "postgraphile-plugin-connection-filter": "^2.1.1",
+    "postgraphile-plugin-fulltext-filter": "^1.0.0-beta.7",
+    "postgraphile-plugin-nested-mutations": "^1.1.0",
+    "postgraphile-polymorphic-relation-plugin": "^1.1.6"
+  }
+}
