@@ -10,8 +10,10 @@
   "scripts": {
     "rest-commons": "yarn workspace @regulus/rest-commons",
     "rest": "yarn workspace @regulus/rest",
+    "utils": "yarn workspace @redware/js-utils",
     "hapi-rest": "yarn workspace @redware/hapi-rest",
     "hapi-postgraphile": "yarn workspace @redware/hapi-postgraphile",
+    "m-bk-accounts": "yarn workspace @regulus/banks-accounts",
     "start": "./init.bash"
   },
   "devDependencies": {

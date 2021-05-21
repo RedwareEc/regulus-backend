@@ -5,12 +5,13 @@ module.exports = {
       id: 0,
       name: '@regulus/graphql',
       script: 'graphql/index.js',
-      cwd: './graphql/'
+      cwd: 'graphql'
     },
     {
       name: '@regulus/rest',
       script: './node_modules/.bin/esno',
       args: 'src/server.ts',
+      watch: ['../../models/**/dist/**/*', 'src'],
       cwd: 'services/rest',
       env: {
         NODE_ENV: 'development'

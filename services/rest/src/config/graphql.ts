@@ -1,6 +1,4 @@
-import { HapiPostgraphile, Postgraphile } from '@redware/hapi-postgraphile';
-import { plugin, HapiRestAction, CrudOperations } from '@redware/hapi-rest';
-import { Request, ResponseToolkit, Server } from '@hapi/hapi';
+import { HapiPostgraphile } from '@redware/hapi-postgraphile';
 
 export const postgraphile: HapiPostgraphile = {
   instances: {

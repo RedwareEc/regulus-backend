@@ -7,7 +7,7 @@
     "strict": true,
     "noImplicitAny": true,
     "moduleResolution": "node",
-    "sourceMap": true,
+    "inlineSourceMap": true,
     "declaration": true,
     "experimentalDecorators": true,
     "resolveJsonModule": true,

@@ -12,7 +12,7 @@
     "types/"
   ],
   "scripts": {
-    "build:ts": "ttsc -p tsconfig.build.json",
+    "build:model": "ttsc -p tsconfig.build.json",
     "watch": "ttsc -p tsconfig.build.json -w",
     "test": "jest",
     "prepare": "yarn build:ts"

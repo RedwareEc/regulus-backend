@@ -1,5 +1,5 @@
 import { Plugin } from '@hapi/hapi';
-import { dependencies, pkg } from './config';
+import { dependencies, pkg, logger } from './config';
 import { plugin as pluginRest } from '@redware/hapi-rest';
 import {} from '@redware/hapi-postgraphile';
 import { buildConnector, buildValidates } from '@regulus/rest-commons';
@@ -37,6 +37,7 @@ export const plugin: Plugin<{ instance: string }> = {
      * Register Fragments
      */
     Fragments.register({ server, key });
+    logger.success('Register %s', pkg.name);
   }
 };
 // declare module '@hapi/hapi' {}

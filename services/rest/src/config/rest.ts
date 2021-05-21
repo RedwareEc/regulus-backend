@@ -14,4 +14,6 @@ rest.plugins.push({
   }
 });
 
+// console.log(rest.plugins);
+
 export { rest };

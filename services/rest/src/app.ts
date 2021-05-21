@@ -12,6 +12,7 @@ export const init = async () => {
       if (response.data) {
         response.output.payload.data = response.data;
       }
+      //
       return response;
     });
     server.table().map((route) => {
@@ -23,6 +24,7 @@ export const init = async () => {
         );
       }
     });
+
     // console.log(server.app.postgraphile.models);
 
     return server;

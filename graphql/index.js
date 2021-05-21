@@ -1,7 +1,7 @@
 // @ts-check
 const { envPath } = require('@redware/js-utils');
-
-const t = require('dotenv').config({ path: envPath() });
+console.log(envPath());
+require('dotenv').config({ path: envPath() });
 
 const Fastify = require('fastify');
 
@@ -22,7 +22,7 @@ const postgraphile_polymorphic_relation_plugin = require('postgraphile-polymorph
 /**
  * Env
  */
-const PORT = process.env.GRAPHQL_PORT || 3015;
+const PORT = process.env.PORT_GRAPHQL || 3015;
 const GRAPHQL_URLS = process.env.GRAPHQL_URLS;
 const SCHEMAS = process.env.GRAPHQL_SCHEMAS || ['public'];
 const URL_BASE = process.env.GRAPHQL_BASE;
