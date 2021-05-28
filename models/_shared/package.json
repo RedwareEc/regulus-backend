@@ -1,6 +1,7 @@
 {
   "name": "@regulus/rest-commons",
   "version": "1.0.0",
+  "private": true,
   "description": "Js utils for node.js",
   "author": "Andres Navarrete",
   "license": "MIT",

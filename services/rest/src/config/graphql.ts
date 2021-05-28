@@ -3,7 +3,7 @@ import { HapiPostgraphile } from '@redware/hapi-postgraphile';
 export const postgraphile: HapiPostgraphile = {
   instances: {
     regulus: {
-      endpoint: '/'
+      endpoint: process.env.ENDPOINT_GRAPHQL!
     }
   }
 };

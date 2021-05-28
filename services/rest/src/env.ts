@@ -9,7 +9,8 @@ process.env.CONSOLA_LEVEL = '6';
  */
 const env = {
   NODE_ENV: Joi.string().default('development'),
-  PORT: Joi.number().required()
+  PORT: Joi.number().required(),
+  ENDPOINT_GRAPHQL: Joi.string().required()
 };
 
 /**
